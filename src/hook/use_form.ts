@@ -1,7 +1,5 @@
-import { FormDef } from "../model/form_def";
+import { CoreOptions } from "../core/form";
 
-interface useFormProps {}
-
-export function useForm({}: useFormProps): FormDef {
-  return {};
+export function useForm(opts: CoreOptions) {
+  return opts.debug;
 }
